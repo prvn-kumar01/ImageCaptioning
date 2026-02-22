@@ -120,13 +120,13 @@ cd ImageCaptioning
 ### 2. Install Dependencies
 
 ```bash
-pip install tensorflow numpy matplotlib streamlit pillow
+pip install -r requirements.txt
 ```
 
 ### 3. Run the Application
 
 ```bash
-streamlit run main.py
+streamlit run app.py
 ```
 
 The app will open in your browser at `http://localhost:8501`. Upload an image and see the magic! ✨
@@ -180,7 +180,8 @@ Flickr8k Dataset
 ```
 ImageCaptioning/
 │
-├── 📄 main.py                          # Streamlit app — upload image & generate caption
+├── 📄 app.py                           # Streamlit deployment UI
+├── 📄 requirements.txt                 # Python dependencies
 ├── 📄 README.md                        # You are here!
 │
 ├── 📁 models/
